@@ -1,0 +1,125 @@
+/* 公共用 */
+			.center{
+				text-align: center;
+			}
+			
+			.shadow{
+			 transition-duration: 0.5s; //停留时间显示
+			}
+	
+			.shadow:hover{
+			-webkit-box-shadow: #ccc 0px 10px 10px;
+			-moz-box-shadow: #ccc 0px 10px 10px;
+			box-shadow: #ccc 0px 10px 10px;  
+			}
+			/* 开头图 */
+			.start_picture {
+				border: 0px solid #000;
+				margin: 100px 391.5px 100px 391.5px;
+				margin-bottom: 86px;
+			}
+
+			.start_img {
+				max-width: 750px;
+				_width: expression(this.width > 750? '750px':this.width);
+			}
+			/* 导航栏 */
+			.navigation_bar {
+				margin: 20px 4%;
+				
+			}
+			
+			/* 文章大模块 */
+			.article_structure {
+				/* margin: 80px 20px; */
+				overflow: hidden;
+				
+			}
+
+			/* 文章图片限制模块 */		
+			.article_left {
+				margin: 20px auto;
+				border: 1px solid #000;
+				max-width: 470px;
+				_width: expression(this.width > 470? '470px':this.width);
+				height: 200px;
+				overflow: hidden;
+				float: none;	
+			}
+			
+			.article_left_lg {
+				margin-left: 4%;
+				margin-Top: 4%;
+				border: 1px solid #000;
+				max-width: 470px;
+				_width: expression(this.width > 470? '470px':this.width);
+				height: 200px;
+				overflow: hidden;
+				float: left;
+			}
+
+			/* 文章图片限制模块2 */
+			.article_image {
+				float: left;
+				max-width: 470px;
+				_width: expression(this.width > 470? '470px':this.width);
+				text-align: center;
+				
+			}
+			
+			/* 内容输出框 */
+			.main1 {
+				padding: 1em;
+				text-align: center;
+				background-color: white;
+				color: #000000;
+				padding: 1em;
+				box-shadow: 1px 1px 5px #888888;
+				overflow: hidden;
+			}
+			
+			/* 文章字体样式 */
+			.post {
+				/* margin: 2px 128px; */
+				/* width: 430px; */
+				float: left;
+			}
+			
+			/* 文章题目 */
+			.title {
+				font-family: 'LatoBold', 'Helvetica', arial;
+				font-weight: bold;
+				font-size: 28px;
+				text-transform: uppercase;
+				line-height: 30px;
+				margin-bottom: 50px;
+			}
+			
+			/* 文章字体 */
+			.post p {
+				font-family: 'LatoRegular', 'Helvetica', arial;
+				font-size: 16px;
+				color: #606060;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+
+			/* 忘记了 */
+			.box {
+				/*非IE的主流浏览器识别的垂直居中的方法*/
+				display: table-cell;
+				vertical-align: middle;
+				/*设置水平居中*/
+				text-align: center;
+				/* 针对IE的Hack */
+				*display: block;
+				*font-size: 175px;
+				/*约为高度的0.873，200*0.873 约为175*/
+				*font-family: Arial;
+				/*防止非utf-8引起的hack失效问题，如gbk编码*/
+			}
+
+			.box img {
+				/*设置图片垂直居中*/
+				vertical-align: middle;
+			}

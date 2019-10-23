@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+		<style type="text/css">
+			/* 公共用 */
+			.center{
+				text-align: center;
+			}
+			
+			.shadow{
+			 transition-duration: 0.5s; //停留时间显示
+			}
+				
+			.shadow:hover{
+			-webkit-box-shadow: #ccc 0px 10px 10px;
+			-moz-box-shadow: #ccc 0px 10px 10px;
+			box-shadow: #ccc 0px 10px 10px;  
+			}
+			/* 开头图 */
+			.start_picture {
+				border: 0px solid #000;
+				text-align: center;
+				margin-bottom: 86px;
+			}
+			
+			.start_img {
+				max-width: 800px;
+				_width: expression(this.width > 800? '800px':this.width);
+			}
+			/* 导航栏 */
+			.navigation_bar {
+				margin: 4% 10% 4% 10%;
+			}
+			
+			/* 内容行 */
+			.content_main{
+				width: 1024px;
+				margin: 4% 10% 4% 10%;
+			}
+			
+			.article_structure {
+				margin: 80px 20px;
+				overflow: hidden;
+				
+			}
+			
+			.article_left {
+				margin: 0px 20px;
+				border: 1px solid #000;
+				max-width: 600px;
+				_width: expression(this.width > 470? '470px':this.width);
+				height: 200px;
+				overflow: hidden;
+				float: left;
+			}
+			
+			.article_image {
+				float: left;
+				max-width: 470px;
+				_width: expression(this.width > 470? '470px':this.width);
+				
+			}
+			
+			.box {
+				/*非IE的主流浏览器识别的垂直居中的方法*/
+				display: table-cell;
+				vertical-align: middle;
+				/*设置水平居中*/
+				text-align: center;
+				/* 针对IE的Hack */
+				*display: block;
+				*font-size: 175px;
+				/*约为高度的0.873，200*0.873 约为175*/
+				*font-family: Arial;
+				/*防止非utf-8引起的hack失效问题，如gbk编码*/
+			}
+			
+			.box img {
+				/*设置图片垂直居中*/
+				vertical-align: middle;
+			}
+			
+			.main1 {
+				padding: 1em;
+				text-align: center;
+				background-color: white;
+				color: #000000;
+				padding: 1em;
+				box-shadow: 1px 1px 5px #888888;
+				overflow: hidden;
+			}
+			
+			.post {
+				/* margin: 2px 128px; */
+				width: 430px;
+				float: left;
+			}
+			
+			.title {
+				font-family: 'LatoBold', 'Helvetica', arial;
+				font-weight: bold;
+				font-size: 28px;
+				text-transform: uppercase;
+				line-height: 30px;
+				margin-bottom: 50px;
+			}
+			
+			.post p {
+				font-family: 'LatoRegular', 'Helvetica', arial;
+				font-size: 16px;
+				color: #606060;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content_main">
+			<div class="main1">
+		
+				<div class="article article_structure shadow">
+					<div class="article_left">
+						<a href="#">
+							<img src="img/ll.jpg" class="article_image" />
+						</a>
+					</div>
+					<div class="post">
+						<h1 class="title">
+							<a href="#">数据结构</a>
+						</h1>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+							sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+						<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">Continue Reading</button>
+					</div>
+				</div>
+				
+				<div class="article article_structure shadow">
+					<div class="article_left">
+						<a href="#">
+							<img src="img/01.jpg" class="article_image" />
+						</a>
+					</div>
+					<div class="post">
+						<h1 class="title">
+							<a href="#">数据结构</a>
+						</h1>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+							sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+						<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">Continue Reading</button>
+					</div>
+				</div>
+				
+				<div class="article article_structure shadow">
+					<div class="article_left">
+						<a href="#">
+							<img src="img/01.jpg" class="article_image" />
+						</a>
+					</div>
+					<div class="post">
+						<h1 class="title">
+							<a href="#">数据结构</a>
+						</h1>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+							sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+						<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">Continue Reading</button>
+					</div>
+				</div>
+		
+			<nav class="">
+				<a href="http://www.layui.com" class="layui-btn layui-btn-primary">首页</a>
+				<a href="http://www.layui.com" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe65a;</i></a> 
+				<a href="http://www.layui.com" class="layui-btn layui-btn-primary">00</a>
+				<a href="http://www.layui.com" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe65b;</i></a> 
+				<a href="http://www.layui.com" class="layui-btn layui-btn-primary">尾页</a>
+			</nav><!-- Pagination End -->
+			</div>
+	</body>
+</html>

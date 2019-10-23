@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<title>主页 0.02</title>
+<!--	<link rel="stylesheet" href="/css/studyant01.css" media="all" />-->
+<!--	<link rel="stylesheet" href="/layui/css/layui.css" media="all" />-->
+<!--	<link rel="stylesheet" href="/css/index.css" media="all" />-->
+<!--	<link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="all" />-->
+<!--	<link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" media="all" />-->
+	<link th:href="@{/css/studyant01.css}" rel="stylesheet"/>
+	<link th:href="@{/layui/css/layui.css}" rel="stylesheet"/>
+	<link th:href="@{/css/index.css}" rel="stylesheet"/>
+	<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+	<link th:href="@{/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+</head>
+<body>
+<!-- 开头图 -->
+<div class="container">
+	<div class="row">
+		<img th:src="@{/img/index750a.jpg}" class="visible-xs" />
+	</div>
+	<div class="row">
+		<div class="" style="text-align: center;">
+			<img th:src="@{/img/index750a.jpg}" class="hidden-xs" />
+		</div>
+	</div>
+</div>
+
+<!-- 导航行 -->
+<div class="layui-layout layui-layout-admin navigation_bar">
+	<div class="layui-header header">
+		<div class="layui-main">
+			<ul class="layui-nav topLevelMenuss center">
+				<li class="layui-nav-item shadow">
+					<a href="javascript:;"><i class="layui-icon" data-icon="&#xe63c;">&#xe63c;</i><cite>内容管理</cite></a>
+				</li>
+				<li class="layui-nav-item shadow" pc>
+					<a href="javascript:;"><i class="seraph icon-icon10" data-icon="icon-icon10"></i><cite>关于我</cite></a>
+				</li>
+				<li class="layui-nav-item shadow" pc>
+					<a href="javascript:;"><i class="layui-icon" data-icon="&#xe620;">&#xe620;</i><cite>系统设置</cite></a>
+				</li>
+				<li class="layui-nav-item shadow" pc>
+					<a href="javascript:;"><i class="layui-icon" data-icon="&#xe705;">&#xe705;</i><cite>留言</cite></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- 内容输出行 -->
+<div class="container">
+	<div class="main1">
+		<div class="row">
+			<div class="article_structure shadow">
+				<!-- phone端 -->
+				<div class="article_left visible-xs visible-sm">
+					<img src="img/index750a.jpg" class="article_image" />
+				</div>
+				<div class="post visible-xs visible-sm">
+					<h1 class="title">
+						<a href="#">数据结构</a>
+					</h1>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+					<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius" style="margin-bottom: 4%;">Continue
+						Reading</button>
+				</div>
+				<!-- PC端 -->
+				<div class="article_left_lg visible-md visible-lg">
+					<img src="img/index750a.jpg" class="article_image" />
+				</div>
+				<div class="visible-md visible-lg">
+					<h1 class="title">
+						<a href="#">数据结构</a>
+					</h1>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+					<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius" style="margin-bottom: 4%;">Continue
+						Reading</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="article_structure shadow">
+				<!-- phone端 -->
+				<div class="article_left visible-xs visible-sm">
+					<img src="img/index750a.jpg" class="article_image" />
+				</div>
+				<div class="post visible-xs visible-sm">
+					<h1 class="title">
+						<a href="#">数据结构</a>
+					</h1>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+					<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius" style="margin-bottom: 4%;">Continue
+						Reading</button>
+				</div>
+				<!-- PC端 -->
+				<div class="article_left_lg visible-md visible-lg">
+					<img src="img/index750a.jpg" class="article_image" />
+				</div>
+				<div class="visible-md visible-lg">
+					<h1 class="title">
+						<a href="#">数据结构</a>
+					</h1>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+					<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius" style="margin-bottom: 4%;">Continue
+						Reading</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="article_structure shadow">
+				<!-- phone端 -->
+				<div class="article_left visible-xs visible-sm">
+					<img src="img/index750a.jpg" class="article_image" />
+				</div>
+				<div class="post visible-xs visible-sm">
+					<h1 class="title">
+						<a href="#">数据结构</a>
+					</h1>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+					<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius" style="margin-bottom: 4%;">Continue
+						Reading</button>
+				</div>
+				<!-- PC端 -->
+				<div class="article_left_lg visible-md visible-lg">
+					<img src="img/index750a.jpg" class="article_image" />
+				</div>
+				<div class="visible-md visible-lg">
+					<h1 class="title">
+						<a href="#">数据结构</a>
+					</h1>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+					<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius" style="margin-bottom: 4%;">Continue
+						Reading</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<nav class="" style="margin-top: 5%;">
+			<a href="http://www.layui.com" class="layui-btn layui-btn-primary">首页</a>
+			<a href="http://www.layui.com" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe65a;</i></a>
+			<a href="http://www.layui.com" class="layui-btn layui-btn-primary">00</a>
+			<a href="http://www.layui.com" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe65b;</i></a>
+			<a href="http://www.layui.com" class="layui-btn layui-btn-primary">尾页</a>
+		</nav><!-- Pagination End -->
+	</div>
+</div>
+<!-- 底部 -->
+<div class="layui-layout layui-layout-admin navigation_bar">
+	<div class="layui-header" style="margin: 4% 4px 4% 4px;">
+		<p style="color: white; text-align: center; line-height: 60px;">粤ICP备19116918号</p>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function() {
+		var img = document.getElementById("img");
+		img.onmouseover = function() {
+			this.src = "img/gg.jpg"
+		}
+
+		img.onmouseout = function() {
+			this.src = "img/ll.jpg";
+		}
+
+	}
+</script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/cache.js"></script>
+</html>
